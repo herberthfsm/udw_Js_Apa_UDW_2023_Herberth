@@ -1,0 +1,54 @@
+
+<!-- Versão alternativa do script com base na mudança de estrutura condicional -->
+
+<!-- Herberth F. S. Mota - 04/09/2023 - 23:30hs -->
+
+
+<!DOCTYPE html> <!--Informa ao navegador a versão do HTML  -->
+<html> <!-- Tag root uma no inicio e no fim  -->
+  <body> <!--   tag corpo do layout do html -->
+    <h2>JavaScript - Exemplo ESTRUTURA DE DECISÃO E REPETIÇÃO - switch</h2> <!-- Titulo   -->
+
+    <hr>
+
+    <p><b>** MENU DE OPÇÕES **</b></p>
+
+    <hr>
+
+    <p>1. Inserir Dados</p>
+    <p>2. Consultar Dados</p>
+    <p>3. Editar Dados</p>
+    <p>4. Excluir Dados</p>
+    <hr>
+    <p><b>Informe uma Opção:</b></p>
+    <input id="opcao" value="0" />
+
+    <br />
+
+    <button onclick="funcao()">Opção</button>
+    <hr>
+    <h1><p id="ex21"></h1></p>
+
+    <!--ESTRUTURA Java Script  -->
+
+    <script>
+      function funcao() {
+        opcao = document.getElementById("opcao").value;
+        if(opcao == 1) {
+          mensagem = " Escolhida a Inserção de Dados.";
+        } else if (opcao == 2) {
+          mensagem = "Escolhida a Consulta de Dados.";
+        } else if (opcao == 3) {
+          mensagem = "Escolhida a Edição de Dados.";
+        } else if(opcao == 4 ) {
+          mensagem = "Escolhida a Exclusão de Dados.";  
+        } else {
+          mensagem = "Opção Inválida.";
+        }
+
+       document.getElementById("ex21").innerHTML = mensagem;
+      }
+        
+    </script>
+  </body>
+</html> <!--tag root final  -->
